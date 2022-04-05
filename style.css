@@ -1,0 +1,491 @@
+/* :root{
+    :prima
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@700;900&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Open+Sans&family=Outfit:wght@400;700;800&family=Poppins:wght@400;600;700&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono:wght@700&family=Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:   hsla(7, 99%, 70%, 0.11);
+    text-align: center;
+    font-family: 'Fraunces', serif;
+}
+
+.head-content{
+    background-image:url(images/mobile/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head-content img{
+    width:auto;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 20px;
+}
+
+.hamburger-content{
+    text-align: center;
+    padding:20px;
+    background-color:#fff;
+    margin:20px;
+    position: absolute;
+    width:85%;
+    top:60px;
+    visibility: hidden;
+}
+
+.hamburger-content h4{
+    margin:20px 0;
+    font-size:20px;
+    color:hsl(210, 4%, 67%);
+}
+
+.hamburger-content .contact{
+    padding:17px;
+    border-radius:100px;
+    background-color: hsl(51, 100%, 49%);
+    color:#000;
+    text-transform: uppercase;
+    margin:10px 50px;
+}
+
+h2{
+    margin: 40px 0;
+    color:#fff;
+    font-size:40px;
+    text-transform: uppercase;
+}
+
+.arrow{
+    margin:0 0 110px;
+}
+
+img{
+    width:100%;
+    margin:0;
+}
+
+.container{
+    margin:40px;
+}
+
+.egg,
+.cup{
+    display:block;
+    width:100%;
+}
+
+.deskegg,
+.deskcup{
+    display: none;
+}
+
+.container h3{
+    font-size:30px;
+    margin:10px;
+    font-weight: 900;
+    color:  hsl(212, 27%, 19%);
+}
+
+.container p{
+    font-size:18px;
+    color:hsl(206, 3%, 54%);
+    line-height:1.6rem;
+    margin:20px 0 30px;
+}
+
+.container a{
+    color:hsl(212, 27%, 19%);
+    font-weight: bolder;
+    font-size:16px;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
+.container a h4{
+    border-bottom:5px solid hsl(51, 100%, 49%);
+    margin:0 85px;
+    border-radius:5px;
+}
+
+.stand a h4{
+    border-bottom:5px solid hsl(7, 99%, 70%);
+}
+
+.graphic{
+    background-image: url(images/mobile/image-graphic-design.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding:500px 10px 100px;
+}
+
+.graphic h4,
+.graphic p{
+    color:hsl(167, 40%, 24%);
+}
+
+.photography{
+    background-image: url(images/mobile/image-photography.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding:500px 10px 100px;
+}
+
+.photography h4,
+.photography p{
+    color:hsl(198, 62%, 26%);
+}
+
+.jobs h4{
+    font-weight:900;
+    font-size:25px;
+    padding:0 0 20px;
+}
+
+.jobs p{
+    font-size:18px;
+    line-height:1.6rem;
+}
+
+.clientTestimony{
+    padding:50px 0px 0;
+}
+
+article img{
+    width:auto;
+}
+
+article .client{
+    padding:10px 0 40px;
+    font-size: 20px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color:hsl(210, 4%, 67%);
+}
+
+article .avatar{
+    width:20%;
+    border-radius: 100%;
+    /* padding:10px 0 20px; */
+    margin:50px 0 20px;
+}
+
+article p{
+    font-size:19px;
+    margin:10px 30px;
+    line-height: 1.7rem;
+    color: hsl(212, 27%, 19%);
+}
+
+article h3{
+    color: hsl(212, 27%, 19%);
+    font-size: 20px;
+    font-weight:900;
+    padding:10px 0 10px;
+}
+
+article h5{
+    color:hsl(210, 4%, 67%);
+    margin:0 0 20px;
+    font-weight:400;
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img img{
+    width:50%;
+    margin:0;
+    padding:0;
+}
+
+.footer{
+    background-color: hsl(168, 100%, 78%);
+    padding:40px 0;
+}
+
+.footer h4{
+    color:hsl(168, 33%, 19%);
+    font-size:25px;
+    padding:10px 0;
+}
+
+.footer .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px 0;
+}
+
+.footer div h5{
+    font-size:20px;
+    color:hsl(168, 33%, 19%);
+}
+
+.footer img{
+    margin:10px 15px;
+}
+
+@media screen and (min-width:420px) {
+    h2{
+        margin:60px 40px 0;
+        line-height: 2.7rem;
+    }
+    .arrow{
+        margin:50px 0 200px;
+    }
+}
+
+@media screen and (min-width:700px) {
+
+    .header{
+        position: relative;
+    }
+
+    .head-content{
+        background-image:url(images/desktop/image-header.jpg)
+    }
+
+    .hamburger-content{
+        visibility: visible;
+        background-color: transparent;
+        position: absolute;
+        top:5px;
+        left:45%;
+        right:0;
+        display: flex;
+        padding:0;
+        margin:0;
+        /* border:2px solid black; */
+        width:auto;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .hamburger-content h4{
+        color:#fff;
+        margin:auto 30px auto 0;
+        padding:0;
+    }
+
+    .hamburger-content .contact{
+        margin:20px 0;
+        padding:10px 20px;
+        background-color: #fff;
+        font-size:17px;
+    }
+
+    .arrow{
+        margin:0 0 130px 0px;
+    }
+
+    .deskegg,
+    .deskcup{
+        display: block;
+        width:50%;
+        margin:0;
+        padding:0;
+        /* border:2px solid black; */
+    }
+
+    article{
+        padding:0;
+    }
+
+    .flex{
+        display:flex;
+        margin:0;
+        flex-direction:row;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topflex{
+        flex-direction: row-reverse;
+    }
+
+    .flex .container{
+        /* border:2px solid black; */
+        padding:0;
+        margin:20px 10px;
+    }
+
+    .flex .container h4{
+        margin:0 34%;
+    }
+
+    .egg,
+    .cup{
+        display:none;
+    }
+
+    .photography{
+        width:955px;
+        height: 725px;
+        background-image: url(images/desktop/image-photography.jpg);
+        /* padding:0;
+        margin:0; */
+    }
+
+   .graphic{
+        /* width:100%; */
+        height:725px;
+        background-image: url(images/desktop/image-graphic-design.jpg);
+        /* padding:0;
+        margin:0; */
+    }
+
+    .jobs p{
+        padding:0;
+        margin:0;
+    }
+
+    article p{
+        font-size:16px;
+        padding:0;
+        margin:10px;
+    }
+
+    .bottomflex{
+        align-items: baseline;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .hamburger-content{
+        left:57%;
+    }
+
+    .photography{
+        width:965px;
+    }
+
+    .img img{
+        width:25%;
+    }
+
+    .footer .content{
+        justify-content:center;
+    }
+
+    .footer .content h5{
+        margin:0 30px;
+    }
+
+    .footer div{
+        margin:20px 0 0;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    h2{
+        font-size:70px;
+        margin:80px 0 0;
+    }
+    .arrow{
+        margin:100px 0 300px;
+    }
+
+    .flex .container{
+        padding:0px 110px 0px;
+        text-align: left;
+        /* border:2px solid black; */
+    }
+
+    .flex .container h3{
+        font-size:50px;
+        padding:0;
+        margin:0 0 20px;
+    }
+    
+    .flex .container p{
+        font-size:18px;
+        line-height: 2.2rem;
+    }
+
+    .flex .container h4{
+        margin:auto 66% 0 1%;
+        padding:0px 10px 0;
+    }
+
+    .photography{
+        width:auto;
+        /* border:2px solid black; */
+    }
+
+    .jobs p{
+        width:600px;
+        padding:0 125px;
+        margin:0 27.4px;
+        overflow-y: hidden;
+        /* border:2px solid black; */
+    }
+
+    .photography p{
+        padding:0 120px;
+        /* width:600px; */
+    }
+
+    .bottomflex{
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .bottomflex article{
+        padding:20px 40px 0;
+    }
+
+    .bottomflex .margin1{
+        padding:0 100px;
+    }
+
+    .bottomflex .margin{
+        padding:20px 0px 0 120px;
+    }
+
+    .bottomflex .margin2{
+        padding:20px 30px 0px 0 ;
+    }
+}
+@media screen and (min-width:1440px) {
+    .flex .container{
+        padding:0 120px 0;
+    }
+
+    .flex .container p{
+        font-size:20px;
+    }
+
+    .jobs p{
+        width:700px;
+        padding:0 175px;
+    }
+
+    .photography p{
+        padding:0 170px;
+    }
+
+    .bottomflex article{
+        padding:0 200px;
+        border:2px solid black;
+        font-size: 25px;
+    }
+}
