@@ -485,7 +485,7 @@ article h5{
 
     .bottomflex article{
         padding:0 200px;
-        border:2px solid black;
+/*         border:2px solid black; */
         font-size: 25px;
     }
 }
